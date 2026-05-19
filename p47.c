@@ -1,0 +1,13 @@
+//program to find sum N elements of array uising pointer
+#include <stdio.h>
+int main(){
+    int i, x[6], sum = 0;
+    printf("Enter 6 numbers: ");
+    for(i=0; i<6; i++){
+        scanf("%d", &x[i]);
+
+        sum +=* (x+i);
+    }
+    printf("Sum of the elements: %d\n", sum);
+    return 0;
+}
